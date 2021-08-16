@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: min-content();
+  column-gap: 20px;
+}
+
+.full-screen {
+  width: 100%;
+  height: 100vh;
+  min-height: none;
+  padding: 70px 60px 20px 60px;
+}
+
+header {
+  width: 100%;
+  height: 7vh;
+  max-height: 80px;
+  min-height: 50px;
+  padding: 0 60px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--gray);
+}
+
+
