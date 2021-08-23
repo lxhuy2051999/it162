@@ -1,0 +1,34 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: min-content();
+}
+
+.full-screen {
+  width: 100%;
+  height: 100vh;
+  min-height: none;
+  padding: 70px 60px 20px 60px;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  width: min(1920px, 100%);
+  height: 100%;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}

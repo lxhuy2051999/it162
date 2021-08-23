@@ -1,77 +1,82 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
-    width: 100%;
-    max-width: 1920px;
-    height: 100%;
-    position: relative;
-    overflow-x: hidden;
+:root {
+  /* colors:  */
+  --black: #282828;
+  --dark-blue: #0a2b5a;
+  --blue: #5f6a86;
+  --gray: #ececec;
+  --white: #ffffff;
+  --red: #f0908a;
+  --pink: #fee5cb;
+  /* grid column width */
+  --one-col: calc(100% / 12);
+  /* desktop padding */
+  --desktop-padding: 60px;
+  /* tablet padding */
+  --tablet-padding: 30px;
+  /* mobile padding */
+  --mobile-padding: 20px;
 }
 
-:root{
-    /* colors:  */
-    --black: #282828;
-    --dark-blue: #0A2B5A;
-    --blue: #5F6A86;
-    --gray: #ECECEC;
-    --white: #ffffff;
-    /* height */
+.xl {
+  font-size: clamp(36px, 3.5vw, 64px);
+}
+.md,
+.md * {
+  font-size: clamp(16px, 1.4vw, 32px);
 }
 
-.xl{
-    font-size: clamp(48px,3.5vw,64px);
-}
-.md{
-    font-size: clamp(16px,1.4vw,28px);
-}
-
-.flex-all-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.flex-column-all-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.flex-column-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.left{
-    grid-column: 2/6;
-    align-items: flex-start;
-    row-gap: max(20px, 5vh);
+.text-center {
+  text-align: center;
 }
 
-.right{
-    grid-column: 7/-1;
+.text-left {
+  text-align: left;
 }
 
-.image-container-large{
-    background-color: var(--blue);
-    height: 100%;
-    width: 100%;
+.hide {
+  display: none;
 }
 
-.text-center{
-    text-align: center;
+.fade-bottom {
+  opacity: 0;
+  padding-top: 2em;
 }
 
-.text-left{
-    text-align: left;
+.fade-top {
+  opacity: 0;
+  padding-bottom: 2em;
 }
 
-.hidden{
-    display: none;
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--blue);
 }
 
-ul{
-    list-style: none;
+button,
+.btn {
+  outline: none;
+  background-color: none;
 }
-
-

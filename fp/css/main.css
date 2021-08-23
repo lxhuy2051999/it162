@@ -1,3 +1,8 @@
-@import url('./element.css');
-@import url('./general.css');
-@import url('./template.css');
+@import url("./header.css");
+@import url("./general.css");
+@import url("./layout.css");
+@import url("./home.css");
+@import url("./info.css");
+@import url("./services.css");
+@import url("./appointment.css");
+@import url("./footer.css");
